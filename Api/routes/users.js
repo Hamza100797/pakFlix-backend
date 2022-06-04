@@ -6,6 +6,9 @@ const bcrypt = require('bcryptjs');
 const saltRounds = 10;
 var jwt = require('jsonwebtoken');
 const secretkey = "this is sceret key bahi jaan hath na layna mekiu"
+
+
+
 router.get('/', (req, res, next) => {
     res.status(200).json({
         masg: "Getting routes of user"
