@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 router.get('/', (req, res, next) => {
     const students = StudentModel.find()
         .then(result => {
-            console.log(`Data is Getting Suucessfully ${result}`)
+            console.log(`Data is Getting Successfully ${result}`)
             res.status(200).json({
                 studentsRecord: result
             })
